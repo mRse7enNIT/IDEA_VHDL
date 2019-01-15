@@ -1,0 +1,2 @@
+# IDEA_VHDL
+used VHDL to implement and simulate the IDEA-algorithm (International Data Encryption Algorithm). We will test the hardware-oriented implementations on the FPGA board. This algorithm dates from 1990 and is symmetric, i.e. it uses the same key for encryption and decryption. Four blocks of cleartext each 16 bit wide are encrypted at a time. The IDEA-algorithm consists of 8 steps of encryption (also called rounds) with a final output transformation. The necessary partial  keys for each cycle and the final transformation are generated from a 128 bit long input key.
