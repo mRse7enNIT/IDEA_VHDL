@@ -1,0 +1,29 @@
+Command line:
+   tb_trafo_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  57211
+
+Tue Nov 20 22:43:03 2018
+
+
+ Elaboration Time: 0.078125 sec
+
+ Current Memory Usage: 5331.54 Meg
+
+ Total Signals          : 52
+ Total Nets             : 496
+ Total Signal Drivers   : 24
+ Total Blocks           : 9
+ Total Primitive Blocks : 7
+ Total Processes        : 15
+ Total Traceable Variables  : 11
+ Total Scalar Nets and Variables : 875
+Total Line Count : 109
+
+ Total Simulation Time: 0.375 sec
+
+ Current Memory Usage: 5174.25 Meg
+
+Tue Nov 20 22:45:33 2018
+

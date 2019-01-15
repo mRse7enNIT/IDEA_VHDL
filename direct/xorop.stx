@@ -1,0 +1,43 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/direct/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 2.00 secs
+Total CPU time to Xst completion: 1.72 secs
+ 
+--> Parameter xsthdpdir set to D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/direct/xst
+
+
+Total REAL time to Xst completion: 2.00 secs
+Total CPU time to Xst completion: 1.72 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/direct/xorop.vhd" in Library work.
+ERROR:HDLParsers:3312 - "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/direct/xorop.vhd" Line 33. Undefined symbol 'down'.
+ERROR:HDLParsers:1209 - "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/direct/xorop.vhd" Line 34. down: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3010 - "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/direct/xorop.vhd" Line 38. Entity xorop does not exist.
+ERROR:HDLParsers:3312 - "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/direct/xorop.vhd" Line 42. Undefined symbol 'I1'.
+ERROR:HDLParsers:1209 - "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/direct/xorop.vhd" Line 42. I1: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/direct/xorop.vhd" Line 42. Undefined symbol 'I2'.
+ERROR:HDLParsers:1209 - "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/direct/xorop.vhd" Line 42. I2: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/direct/xorop.vhd" Line 44. Undefined symbol 'O'.
+WARNING:HDLParsers:1406 - "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/direct/xorop.vhd" Line 42. No sensitivity list and no wait in the process
+WARNING:HDLParsers:3481 - Library work has no units. Did not save reference file "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/direct/xst/work/hdllib.ref" for it.
+
+
+Total REAL time to Xst completion: 2.00 secs
+Total CPU time to Xst completion: 2.65 secs
+ 
+--> 
+
+Total memory usage is 4505416 kilobytes
+
+Number of errors   :    8 (   0 filtered)
+Number of warnings :    3 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

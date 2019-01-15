@@ -1,0 +1,29 @@
+Command line:
+   tb_keygen_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  52125
+
+Sun Jan 06 04:10:26 2019
+
+
+ Elaboration Time: 0.078125 sec
+
+ Current Memory Usage: 5330.89 Meg
+
+ Total Signals          : 17
+ Total Nets             : 324
+ Total Signal Drivers   : 9
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 8
+ Total Traceable Variables  : 8
+ Total Scalar Nets and Variables : 684
+Total Line Count : 36
+
+ Total Simulation Time: 0.109375 sec
+
+ Current Memory Usage: 5330.89 Meg
+
+Sun Jan 06 04:10:28 2019
+

@@ -1,0 +1,1001 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.20 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.20 secs
+ 
+--> Reading design: idea_com.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "idea_com.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "idea_com"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : idea_com
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/rcs2plus/mux4x1.vhd" in Library work.
+Entity <mux4x1> compiled.
+Entity <mux4x1> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/rcs2plus/mulop.vhd" in Library work.
+Entity <mulop> compiled.
+Entity <mulop> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/rcs2plus/addop.vhd" in Library work.
+Entity <addop> compiled.
+Entity <addop> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/rcs2plus/xorop.vhd" in Library work.
+Entity <xorop> compiled.
+Entity <xorop> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/rcs2plus/register_16.vhd" in Library work.
+Entity <register_16> compiled.
+Entity <register_16> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/rcs2plus/datapath.vhd" in Library work.
+Entity <datapath> compiled.
+Entity <datapath> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/rcs2plus/control.vhd" in Library work.
+Entity <control> compiled.
+Entity <control> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/rcs2plus/mux2x1.vhd" in Library work.
+Architecture behavioral of Entity mux2x1 is up to date.
+Compiling vhdl file "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/rcs2plus/keygen.vhd" in Library work.
+Entity <keygen> compiled.
+Entity <keygen> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/rcs2plus/clockedround.vhd" in Library work.
+Entity <clockedround> compiled.
+Entity <clockedround> (Architecture <Structural>) compiled.
+Compiling vhdl file "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/rcs2plus/roundcounter.vhd" in Library work.
+Entity <roundcounter> compiled.
+Entity <roundcounter> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/rcs2plus/txmit.vhd" in Library work.
+Architecture behavior of Entity txmit is up to date.
+Compiling vhdl file "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/rcs2plus/rxcver.vhd" in Library work.
+Architecture behavior of Entity rxcver is up to date.
+Compiling vhdl file "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/rcs2plus/uart.vhd" in Library work.
+Architecture behavior of Entity uart is up to date.
+Compiling vhdl file "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/rcs2plus/idea_rcs2plus.vhd" in Library work.
+Entity <idea_rcs2plus> compiled.
+Entity <idea_rcs2plus> (Architecture <Structural>) compiled.
+Compiling vhdl file "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/rcs2plus/clk_div.vhd" in Library work.
+Architecture behavioral of Entity clk_div is up to date.
+Compiling vhdl file "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/rcs2plus/idea_com_inner.vhd" in Library work.
+Entity <idea_com_inner> compiled.
+Entity <idea_com_inner> (Architecture <behavioral>) compiled.
+Compiling vhdl file "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/rcs2plus/idea_com.vhd" in Library work.
+Architecture behavioral of Entity idea_com is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <idea_com> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <clk_div> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <idea_com_inner> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <uart> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <idea_rcs2plus> in library <work> (architecture <Structural>).
+
+Analyzing hierarchy for entity <mux2x1> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <txmit> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <rxcver> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <register_16> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <keygen> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <clockedround> in library <work> (architecture <Structural>).
+
+Analyzing hierarchy for entity <roundcounter> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <datapath> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <control> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <mux4x1> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <mulop> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <addop> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <xorop> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <register_16> in library <work> (architecture <Behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <idea_com> in library <work> (Architecture <behavioral>).
+Entity <idea_com> analyzed. Unit <idea_com> generated.
+
+Analyzing Entity <clk_div> in library <work> (Architecture <behavioral>).
+Entity <clk_div> analyzed. Unit <clk_div> generated.
+
+Analyzing Entity <idea_com_inner> in library <work> (Architecture <behavioral>).
+INFO:Xst:2679 - Register <LEDs<7>> in unit <idea_com_inner> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <LEDs<6>> in unit <idea_com_inner> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <LEDs<5>> in unit <idea_com_inner> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <LEDs<4>> in unit <idea_com_inner> has a constant value of 0 during circuit operation. The register is replaced by logic.
+Entity <idea_com_inner> analyzed. Unit <idea_com_inner> generated.
+
+Analyzing Entity <uart> in library <work> (Architecture <behavior>).
+Entity <uart> analyzed. Unit <uart> generated.
+
+Analyzing Entity <txmit> in library <work> (Architecture <behavior>).
+Entity <txmit> analyzed. Unit <txmit> generated.
+
+Analyzing Entity <rxcver> in library <work> (Architecture <behavior>).
+Entity <rxcver> analyzed. Unit <rxcver> generated.
+
+Analyzing Entity <idea_rcs2plus> in library <work> (Architecture <Structural>).
+Entity <idea_rcs2plus> analyzed. Unit <idea_rcs2plus> generated.
+
+Analyzing Entity <register_16> in library <work> (Architecture <Behavioral>).
+Entity <register_16> analyzed. Unit <register_16> generated.
+
+Analyzing Entity <keygen> in library <work> (Architecture <Behavioral>).
+WARNING:Xst:819 - "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/rcs2plus/keygen.vhd" line 51: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <KEY>
+Entity <keygen> analyzed. Unit <keygen> generated.
+
+Analyzing Entity <clockedround> in library <work> (Architecture <Structural>).
+Entity <clockedround> analyzed. Unit <clockedround> generated.
+
+Analyzing Entity <datapath> in library <work> (Architecture <Behavioral>).
+Entity <datapath> analyzed. Unit <datapath> generated.
+
+Analyzing Entity <mux4x1> in library <work> (Architecture <Behavioral>).
+INFO:Xst:1561 - "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/rcs2plus/mux4x1.vhd" line 51: Mux is complete : default of case is discarded
+Entity <mux4x1> analyzed. Unit <mux4x1> generated.
+
+Analyzing Entity <mulop> in library <work> (Architecture <Behavioral>).
+Entity <mulop> analyzed. Unit <mulop> generated.
+
+Analyzing Entity <addop> in library <work> (Architecture <Behavioral>).
+Entity <addop> analyzed. Unit <addop> generated.
+
+Analyzing Entity <xorop> in library <work> (Architecture <Behavioral>).
+Entity <xorop> analyzed. Unit <xorop> generated.
+
+Analyzing Entity <control> in library <work> (Architecture <Behavioral>).
+Entity <control> analyzed. Unit <control> generated.
+
+Analyzing Entity <roundcounter> in library <work> (Architecture <Behavioral>).
+Entity <roundcounter> analyzed. Unit <roundcounter> generated.
+
+Analyzing Entity <mux2x1> in library <work> (Architecture <behavioral>).
+INFO:Xst:1561 - "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/rcs2plus/mux2x1.vhd" line 47: Mux is complete : default of case is discarded
+Entity <mux2x1> analyzed. Unit <mux2x1> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <clk_div>.
+    Related source file is "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/rcs2plus/clk_div.vhd".
+    Found 1-bit register for signal <CLK_OUT>.
+    Found 32-bit comparator less for signal <CLK_OUT$cmp_lt0000> created at line 38.
+    Found 32-bit comparator less for signal <CLK_OUT$cmp_lt0001> created at line 39.
+    Found 32-bit up counter for signal <counter>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+Unit <clk_div> synthesized.
+
+
+Synthesizing Unit <mux2x1>.
+    Related source file is "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/rcs2plus/mux2x1.vhd".
+Unit <mux2x1> synthesized.
+
+
+Synthesizing Unit <txmit>.
+    Related source file is "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/rcs2plus/txmit.vhd".
+    Found 1-bit register for signal <sout>.
+    Found 3-bit up counter for signal <cnt>.
+    Found 1-bit register for signal <tag1>.
+    Found 1-bit register for signal <tag2>.
+    Found 8-bit register for signal <tsr>.
+    Found 1-bit register for signal <txclk>.
+    Found 1-bit register for signal <txdatardy>.
+    Found 1-bit register for signal <txdone1>.
+    Found 1-bit register for signal <txparity>.
+    Found 1-bit xor2 for signal <txparity$xor0000> created at line 136.
+    Found 1-bit register for signal <write1>.
+    Found 1-bit register for signal <write2>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred  17 D-type flip-flop(s).
+Unit <txmit> synthesized.
+
+
+Synthesizing Unit <rxcver>.
+    Related source file is "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/rcs2plus/rxcver.vhd".
+    Found 1-bit register for signal <parity_error>.
+    Found 1-bit register for signal <framing_error>.
+    Found 1-bit register for signal <overrun>.
+    Found 1-bit register for signal <hunt>.
+    Found 1-bit register for signal <idle>.
+    Found 1-bit register for signal <idle1>.
+    Found 1-bit register for signal <paritygen>.
+    Found 1-bit xor2 for signal <paritygen$xor0000> created at line 152.
+    Found 1-bit register for signal <read1>.
+    Found 1-bit register for signal <read2>.
+    Found 8-bit register for signal <rhr>.
+    Found 8-bit register for signal <rsr>.
+    Found 1-bit register for signal <rx1>.
+    Found 1-bit register for signal <rxclk>.
+    Found 4-bit up counter for signal <rxcnt>.
+    Found 1-bit register for signal <rxdatardy>.
+    Found 1-bit register for signal <rxparity>.
+    Found 1-bit register for signal <rxstop>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred  30 D-type flip-flop(s).
+Unit <rxcver> synthesized.
+
+
+Synthesizing Unit <register_16>.
+    Related source file is "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/rcs2plus/register_16.vhd".
+    Found 16-bit register for signal <Q>.
+    Summary:
+	inferred  16 D-type flip-flop(s).
+Unit <register_16> synthesized.
+
+
+Synthesizing Unit <keygen>.
+    Related source file is "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/rcs2plus/keygen.vhd".
+Unit <keygen> synthesized.
+
+
+Synthesizing Unit <roundcounter>.
+    Related source file is "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/rcs2plus/roundcounter.vhd".
+    Found finite state machine <FSM_0> for signal <CURRENT_STATE>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 6                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 2                                              |
+    | Clock              | CLK                       (rising_edge)        |
+    | Power Up State     | sleep                                          |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 4-bit register for signal <cin>.
+    Found 4-bit adder for signal <cin$addsub0000> created at line 57.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   4 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <roundcounter> synthesized.
+
+
+Synthesizing Unit <control>.
+    Related source file is "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/rcs2plus/control.vhd".
+    Found 8x6-bit ROM for signal <cin$rom0000>.
+    Found 2-bit 8-to-1 multiplexer for signal <S_T>.
+    Found 3-bit register for signal <cin>.
+    Found 3-bit adder for signal <cin$share0000>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred   3 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   2 Multiplexer(s).
+Unit <control> synthesized.
+
+
+Synthesizing Unit <mux4x1>.
+    Related source file is "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/rcs2plus/mux4x1.vhd".
+    Found 16-bit 4-to-1 multiplexer for signal <O>.
+    Summary:
+	inferred  16 Multiplexer(s).
+Unit <mux4x1> synthesized.
+
+
+Synthesizing Unit <mulop>.
+    Related source file is "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/rcs2plus/mulop.vhd".
+WARNING:Xst:1780 - Signal <temp6> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <temp5> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <temp4<16>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <temp3<33>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 17x17-bit multiplier for signal <temp3>.
+    Found 17-bit addsub for signal <temp4>.
+    Found 17-bit subtractor for signal <temp4$addsub0000> created at line 71.
+    Found 17-bit comparator greatequal for signal <temp4$cmp_ge0000> created at line 67.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred   1 Multiplier(s).
+	inferred   1 Comparator(s).
+Unit <mulop> synthesized.
+
+
+Synthesizing Unit <addop>.
+    Related source file is "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/rcs2plus/addop.vhd".
+    Found 16-bit adder for signal <O>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <addop> synthesized.
+
+
+Synthesizing Unit <xorop>.
+    Related source file is "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/rcs2plus/xorop.vhd".
+    Found 16-bit xor2 for signal <O>.
+Unit <xorop> synthesized.
+
+
+Synthesizing Unit <uart>.
+    Related source file is "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/rcs2plus/uart.vhd".
+Unit <uart> synthesized.
+
+
+Synthesizing Unit <datapath>.
+    Related source file is "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/rcs2plus/datapath.vhd".
+Unit <datapath> synthesized.
+
+
+Synthesizing Unit <clockedround>.
+    Related source file is "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/rcs2plus/clockedround.vhd".
+Unit <clockedround> synthesized.
+
+
+Synthesizing Unit <idea_rcs2plus>.
+    Related source file is "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/rcs2plus/idea_rcs2plus.vhd".
+Unit <idea_rcs2plus> synthesized.
+
+
+Synthesizing Unit <idea_com_inner>.
+    Related source file is "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/rcs2plus/idea_com_inner.vhd".
+    Found finite state machine <FSM_1> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 12                                             |
+    | Transitions        | 21                                             |
+    | Inputs             | 6                                              |
+    | Outputs            | 18                                             |
+    | Clock              | Clk                       (rising_edge)        |
+    | Reset              | Reset                     (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 4-bit register for signal <LEDs<3:0>>.
+    Found 5-bit register for signal <byte_cntr>.
+    Found 5-bit adder for signal <byte_cntr$share0000> created at line 255.
+    Found 128-bit register for signal <key>.
+    Found 1-bit register for signal <loopback_select>.
+    Found 1-bit register for signal <read>.
+    Found 1-bit register for signal <start_idea>.
+    Found 128-bit comparator equal for signal <state$cmp_eq0001> created at line 234.
+    Found 8-bit register for signal <txdata>.
+    Found 1-bit register for signal <write>.
+    Found 16-bit register for signal <x1>.
+    Found 16-bit register for signal <x2>.
+    Found 16-bit register for signal <x3>.
+    Found 16-bit register for signal <x4>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred 213 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
+Unit <idea_com_inner> synthesized.
+
+
+Synthesizing Unit <idea_com>.
+    Related source file is "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/rcs2plus/idea_com.vhd".
+Unit <idea_com> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 8x6-bit ROM                                           : 1
+# Multipliers                                          : 1
+ 17x17-bit multiplier                                  : 1
+# Adders/Subtractors                                   : 6
+ 16-bit adder                                          : 1
+ 17-bit addsub                                         : 1
+ 17-bit subtractor                                     : 1
+ 3-bit adder                                           : 1
+ 4-bit adder                                           : 1
+ 5-bit adder                                           : 1
+# Counters                                             : 3
+ 3-bit up counter                                      : 1
+ 32-bit up counter                                     : 1
+ 4-bit up counter                                      : 1
+# Registers                                            : 257
+ 1-bit register                                        : 240
+ 16-bit register                                       : 12
+ 3-bit register                                        : 1
+ 4-bit register                                        : 1
+ 5-bit register                                        : 1
+ 8-bit register                                        : 2
+# Comparators                                          : 4
+ 128-bit comparator equal                              : 1
+ 17-bit comparator greatequal                          : 1
+ 32-bit comparator less                                : 2
+# Multiplexers                                         : 5
+ 16-bit 4-to-1 multiplexer                             : 4
+ 2-bit 8-to-1 multiplexer                              : 1
+# Xors                                                 : 7
+ 1-bit xor2                                            : 2
+ 16-bit xor2                                           : 5
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_1> for best encoding.
+Optimizing FSM <idea_1/state/FSM> on signal <state[1:12]> with one-hot encoding.
+---------------------------------------------------
+ State                             | Encoding
+---------------------------------------------------
+ idle                              | 000000000001
+ wait_for_data                     | 000000000010
+ received_byte                     | 000000000100
+ read_byte                         | 000000001000
+ wait_for_rxrdy_0                  | 000000010000
+ wait_for_idea_to_deactivate_ready | 000001000000
+ wait_for_idea_to_complete         | 000100000000
+ write_byte                        | 000010000000
+ write_byte_now                    | 001000000000
+ write_byte_ack                    | 010000000000
+ wait_for_txrdy_1                  | 100000000000
+ loopback_mode                     | 000000100000
+---------------------------------------------------
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <idea_1/idea1/RC/CURRENT_STATE/FSM> on signal <CURRENT_STATE[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ sleep | 00
+ setup | 01
+ calc  | 10
+-------------------
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 2
+# ROMs                                                 : 1
+ 8x6-bit ROM                                           : 1
+# Multipliers                                          : 1
+ 17x17-bit multiplier                                  : 1
+# Adders/Subtractors                                   : 6
+ 16-bit adder                                          : 1
+ 17-bit addsub                                         : 1
+ 17-bit subtractor                                     : 1
+ 3-bit adder                                           : 1
+ 4-bit adder                                           : 1
+ 5-bit adder                                           : 1
+# Counters                                             : 3
+ 3-bit up counter                                      : 1
+ 32-bit up counter                                     : 1
+ 4-bit up counter                                      : 1
+# Registers                                            : 460
+ Flip-Flops                                            : 460
+# Comparators                                          : 4
+ 128-bit comparator equal                              : 1
+ 17-bit comparator greatequal                          : 1
+ 32-bit comparator less                                : 2
+# Multiplexers                                         : 5
+ 16-bit 4-to-1 multiplexer                             : 4
+ 2-bit 8-to-1 multiplexer                              : 1
+# Xors                                                 : 7
+ 1-bit xor2                                            : 2
+ 16-bit xor2                                           : 5
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <idea_com> ...
+
+Optimizing unit <keygen> ...
+
+Optimizing unit <txmit> ...
+
+Optimizing unit <rxcver> ...
+
+Optimizing unit <register_16> ...
+
+Optimizing unit <roundcounter> ...
+
+Optimizing unit <control> ...
+
+Optimizing unit <mulop> ...
+
+Optimizing unit <datapath> ...
+
+Optimizing unit <idea_rcs2plus> ...
+
+Optimizing unit <idea_com_inner> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block idea_com, actual ratio is 15.
+FlipFlop idea_1/idea1/RC/cin_0 has been replicated 4 time(s)
+FlipFlop idea_1/idea1/RC/cin_1 has been replicated 3 time(s)
+FlipFlop idea_1/idea1/RC/cin_2 has been replicated 4 time(s)
+FlipFlop idea_1/idea1/RC/cin_3 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 525
+ Flip-Flops                                            : 525
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : idea_com.ngr
+Top Level Output File Name         : idea_com
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 12
+
+Cell Usage :
+# BELS                             : 1661
+#      GND                         : 1
+#      INV                         : 13
+#      LUT1                        : 37
+#      LUT2                        : 156
+#      LUT3                        : 312
+#      LUT3_D                      : 9
+#      LUT3_L                      : 20
+#      LUT4                        : 682
+#      LUT4_D                      : 17
+#      LUT4_L                      : 57
+#      MUXCY                       : 149
+#      MUXF5                       : 127
+#      VCC                         : 1
+#      XORCY                       : 80
+# FlipFlops/Latches                : 525
+#      FD                          : 5
+#      FDC                         : 15
+#      FDCE                        : 14
+#      FDE                         : 410
+#      FDP                         : 18
+#      FDR                         : 42
+#      FDRE                        : 9
+#      FDRS                        : 4
+#      FDRSE                       : 2
+#      FDS                         : 5
+#      FDSE                        : 1
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 11
+#      IBUF                        : 2
+#      OBUF                        : 9
+# MULTs                            : 1
+#      MULT18X18SIO                : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                      691  out of   4656    14%  
+ Number of Slice Flip Flops:            525  out of   9312     5%  
+ Number of 4 input LUTs:               1303  out of   9312    13%  
+ Number of IOs:                          12
+ Number of bonded IOBs:                  12  out of    232     5%  
+ Number of MULT18X18SIOs:                 1  out of     20     5%  
+ Number of GCLKs:                         2  out of     24     8%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+-------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)         | Load  |
+-----------------------------------+-------------------------------+-------+
+Clk                                | BUFGP                         | 33    |
+clk_div_1/CLK_OUT1                 | BUFG                          | 468   |
+idea_1/uart1/rx/rxclk              | NONE(idea_1/uart1/rx/rxparity)| 12    |
+idea_1/uart1/tx/txclk              | NONE(idea_1/uart1/tx/tsr_7)   | 12    |
+-----------------------------------+-------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+Reset                              | IBUF                   | 47    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 26.537ns (Maximum Frequency: 37.683MHz)
+   Minimum input arrival time before clock: 6.180ns
+   Maximum output required time after clock: 4.310ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Clk'
+  Clock period: 7.013ns (frequency: 142.588MHz)
+  Total number of paths / destination ports: 2607 / 66
+-------------------------------------------------------------------------
+Delay:               7.013ns (Levels of Logic = 14)
+  Source:            clk_div_1/counter_1 (FF)
+  Destination:       clk_div_1/counter_0 (FF)
+  Source Clock:      Clk rising
+  Destination Clock: Clk rising
+
+  Data Path: clk_div_1/counter_1 to clk_div_1/counter_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              3   0.591   0.706  clk_div_1/counter_1 (clk_div_1/counter_1)
+     LUT1:I0->O            1   0.704   0.000  clk_div_1/Mcompar_CLK_OUT_cmp_lt0001_cy<0>_rt (clk_div_1/Mcompar_CLK_OUT_cmp_lt0001_cy<0>_rt)
+     MUXCY:S->O            1   0.464   0.000  clk_div_1/Mcompar_CLK_OUT_cmp_lt0001_cy<0> (clk_div_1/Mcompar_CLK_OUT_cmp_lt0001_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  clk_div_1/Mcompar_CLK_OUT_cmp_lt0001_cy<1> (clk_div_1/Mcompar_CLK_OUT_cmp_lt0001_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  clk_div_1/Mcompar_CLK_OUT_cmp_lt0001_cy<2> (clk_div_1/Mcompar_CLK_OUT_cmp_lt0001_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  clk_div_1/Mcompar_CLK_OUT_cmp_lt0001_cy<3> (clk_div_1/Mcompar_CLK_OUT_cmp_lt0001_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  clk_div_1/Mcompar_CLK_OUT_cmp_lt0001_cy<4> (clk_div_1/Mcompar_CLK_OUT_cmp_lt0001_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  clk_div_1/Mcompar_CLK_OUT_cmp_lt0001_cy<5> (clk_div_1/Mcompar_CLK_OUT_cmp_lt0001_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  clk_div_1/Mcompar_CLK_OUT_cmp_lt0001_cy<6> (clk_div_1/Mcompar_CLK_OUT_cmp_lt0001_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  clk_div_1/Mcompar_CLK_OUT_cmp_lt0001_cy<7> (clk_div_1/Mcompar_CLK_OUT_cmp_lt0001_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  clk_div_1/Mcompar_CLK_OUT_cmp_lt0001_cy<8> (clk_div_1/Mcompar_CLK_OUT_cmp_lt0001_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  clk_div_1/Mcompar_CLK_OUT_cmp_lt0001_cy<9> (clk_div_1/Mcompar_CLK_OUT_cmp_lt0001_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  clk_div_1/Mcompar_CLK_OUT_cmp_lt0001_cy<10> (clk_div_1/Mcompar_CLK_OUT_cmp_lt0001_cy<10>)
+     MUXCY:CI->O           2   0.459   0.622  clk_div_1/Mcompar_CLK_OUT_cmp_lt0001_cy<11> (clk_div_1/Mcompar_CLK_OUT_cmp_lt0001_cy<11>)
+     LUT2:I0->O           32   0.704   1.262  clk_div_1/counter_and00001 (clk_div_1/counter_and0000)
+     FDR:R                     0.911          clk_div_1/counter_0
+    ----------------------------------------
+    Total                      7.013ns (4.423ns logic, 2.590ns route)
+                                       (63.1% logic, 36.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_div_1/CLK_OUT1'
+  Clock period: 26.537ns (frequency: 37.683MHz)
+  Total number of paths / destination ports: 1939955578 / 895
+-------------------------------------------------------------------------
+Delay:               26.537ns (Levels of Logic = 46)
+  Source:            idea_1/idea1/RC/cin_1_1 (FF)
+  Destination:       idea_1/idea1/Reg4/Q_15 (FF)
+  Source Clock:      clk_div_1/CLK_OUT1 rising
+  Destination Clock: clk_div_1/CLK_OUT1 rising
+
+  Data Path: idea_1/idea1/RC/cin_1_1 to idea_1/idea1/Reg4/Q_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             21   0.591   1.163  idea_1/idea1/RC/cin_1_1 (idea_1/idea1/RC/cin_1_1)
+     LUT3_D:I2->O         57   0.704   1.305  idea_1/idea1/K1/SELECTED_KEY_cmp_eq000011 (idea_1/idea1/K1/N3)
+     LUT4:I2->O            2   0.704   0.482  idea_1/idea1/K1/SELECTED_KEY<43>10 (idea_1/idea1/K1/SELECTED_KEY<36>48)
+     LUT3:I2->O            1   0.704   0.424  idea_1/idea1/K1/SELECTED_KEY<36>57 (idea_1/idea1/K1/SELECTED_KEY<36>57)
+     LUT4:I3->O            1   0.704   0.000  idea_1/idea1/CR/DP/mux2/Mmux_O_410 (idea_1/idea1/CR/DP/mux2/Mmux_O_410)
+     MUXF5:I0->O           2   0.321   0.622  idea_1/idea1/CR/DP/mux2/Mmux_O_2_f5_9 (idea_1/idea1/CR/DP/Mux2_Out<4>)
+     LUT4:I0->O            1   0.704   0.499  idea_1/idea1/CR/DP/mul/temp2_cmp_eq000025 (idea_1/idea1/CR/DP/mul/temp2_cmp_eq000025)
+     LUT4:I1->O            1   0.704   0.420  idea_1/idea1/CR/DP/mul/temp2_cmp_eq000076 (idea_1/idea1/CR/DP/mul/temp2<16>)
+     MULT18X18SIO:B16->P16    3   4.860   0.610  idea_1/idea1/CR/DP/mul/Mmult_temp3 (idea_1/idea1/CR/DP/mul/temp3<16>)
+     LUT2:I1->O            1   0.704   0.000  idea_1/idea1/CR/DP/mul/Mcompar_temp4_cmp_ge0000_lut<0> (idea_1/idea1/CR/DP/mul/Mcompar_temp4_cmp_ge0000_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  idea_1/idea1/CR/DP/mul/Mcompar_temp4_cmp_ge0000_cy<0> (idea_1/idea1/CR/DP/mul/Mcompar_temp4_cmp_ge0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  idea_1/idea1/CR/DP/mul/Mcompar_temp4_cmp_ge0000_cy<1> (idea_1/idea1/CR/DP/mul/Mcompar_temp4_cmp_ge0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  idea_1/idea1/CR/DP/mul/Mcompar_temp4_cmp_ge0000_cy<2> (idea_1/idea1/CR/DP/mul/Mcompar_temp4_cmp_ge0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  idea_1/idea1/CR/DP/mul/Mcompar_temp4_cmp_ge0000_cy<3> (idea_1/idea1/CR/DP/mul/Mcompar_temp4_cmp_ge0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  idea_1/idea1/CR/DP/mul/Mcompar_temp4_cmp_ge0000_cy<4> (idea_1/idea1/CR/DP/mul/Mcompar_temp4_cmp_ge0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  idea_1/idea1/CR/DP/mul/Mcompar_temp4_cmp_ge0000_cy<5> (idea_1/idea1/CR/DP/mul/Mcompar_temp4_cmp_ge0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  idea_1/idea1/CR/DP/mul/Mcompar_temp4_cmp_ge0000_cy<6> (idea_1/idea1/CR/DP/mul/Mcompar_temp4_cmp_ge0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  idea_1/idea1/CR/DP/mul/Mcompar_temp4_cmp_ge0000_cy<7> (idea_1/idea1/CR/DP/mul/Mcompar_temp4_cmp_ge0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  idea_1/idea1/CR/DP/mul/Mcompar_temp4_cmp_ge0000_cy<8> (idea_1/idea1/CR/DP/mul/Mcompar_temp4_cmp_ge0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  idea_1/idea1/CR/DP/mul/Mcompar_temp4_cmp_ge0000_cy<9> (idea_1/idea1/CR/DP/mul/Mcompar_temp4_cmp_ge0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  idea_1/idea1/CR/DP/mul/Mcompar_temp4_cmp_ge0000_cy<10> (idea_1/idea1/CR/DP/mul/Mcompar_temp4_cmp_ge0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  idea_1/idea1/CR/DP/mul/Mcompar_temp4_cmp_ge0000_cy<11> (idea_1/idea1/CR/DP/mul/Mcompar_temp4_cmp_ge0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  idea_1/idea1/CR/DP/mul/Mcompar_temp4_cmp_ge0000_cy<12> (idea_1/idea1/CR/DP/mul/Mcompar_temp4_cmp_ge0000_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  idea_1/idea1/CR/DP/mul/Mcompar_temp4_cmp_ge0000_cy<13> (idea_1/idea1/CR/DP/mul/Mcompar_temp4_cmp_ge0000_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  idea_1/idea1/CR/DP/mul/Mcompar_temp4_cmp_ge0000_cy<14> (idea_1/idea1/CR/DP/mul/Mcompar_temp4_cmp_ge0000_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  idea_1/idea1/CR/DP/mul/Mcompar_temp4_cmp_ge0000_cy<15> (idea_1/idea1/CR/DP/mul/Mcompar_temp4_cmp_ge0000_cy<15>)
+     MUXCY:CI->O          32   0.059   1.297  idea_1/idea1/CR/DP/mul/Mcompar_temp4_cmp_ge0000_cy<16> (idea_1/idea1/CR/DP/mul/temp4_cmp_ge0000)
+     LUT3:I2->O            0   0.704   0.000  idea_1/idea1/CR/DP/mul/temp4_mux0000<0>1 (idea_1/idea1/CR/DP/mul/temp4_mux0000<0>)
+     MUXCY:DI->O           1   0.888   0.000  idea_1/idea1/CR/DP/mul/Maddsub_temp4_cy<0> (idea_1/idea1/CR/DP/mul/Maddsub_temp4_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  idea_1/idea1/CR/DP/mul/Maddsub_temp4_cy<1> (idea_1/idea1/CR/DP/mul/Maddsub_temp4_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  idea_1/idea1/CR/DP/mul/Maddsub_temp4_cy<2> (idea_1/idea1/CR/DP/mul/Maddsub_temp4_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  idea_1/idea1/CR/DP/mul/Maddsub_temp4_cy<3> (idea_1/idea1/CR/DP/mul/Maddsub_temp4_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  idea_1/idea1/CR/DP/mul/Maddsub_temp4_cy<4> (idea_1/idea1/CR/DP/mul/Maddsub_temp4_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  idea_1/idea1/CR/DP/mul/Maddsub_temp4_cy<5> (idea_1/idea1/CR/DP/mul/Maddsub_temp4_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  idea_1/idea1/CR/DP/mul/Maddsub_temp4_cy<6> (idea_1/idea1/CR/DP/mul/Maddsub_temp4_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  idea_1/idea1/CR/DP/mul/Maddsub_temp4_cy<7> (idea_1/idea1/CR/DP/mul/Maddsub_temp4_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  idea_1/idea1/CR/DP/mul/Maddsub_temp4_cy<8> (idea_1/idea1/CR/DP/mul/Maddsub_temp4_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  idea_1/idea1/CR/DP/mul/Maddsub_temp4_cy<9> (idea_1/idea1/CR/DP/mul/Maddsub_temp4_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  idea_1/idea1/CR/DP/mul/Maddsub_temp4_cy<10> (idea_1/idea1/CR/DP/mul/Maddsub_temp4_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  idea_1/idea1/CR/DP/mul/Maddsub_temp4_cy<11> (idea_1/idea1/CR/DP/mul/Maddsub_temp4_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  idea_1/idea1/CR/DP/mul/Maddsub_temp4_cy<12> (idea_1/idea1/CR/DP/mul/Maddsub_temp4_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  idea_1/idea1/CR/DP/mul/Maddsub_temp4_cy<13> (idea_1/idea1/CR/DP/mul/Maddsub_temp4_cy<13>)
+     XORCY:CI->O           7   0.804   0.712  idea_1/idea1/CR/DP/mul/Maddsub_temp4_xor<14> (idea_1/idea1/CR/DP/mulop_Out<14>)
+     LUT4:I3->O            1   0.704   0.000  idea_1/idea1/CR/DP/add/Madd_O_lut<14> (idea_1/idea1/CR/DP/add/Madd_O_lut<14>)
+     MUXCY:S->O            0   0.464   0.000  idea_1/idea1/CR/DP/add/Madd_O_cy<14> (idea_1/idea1/CR/DP/add/Madd_O_cy<14>)
+     XORCY:CI->O           6   0.804   0.748  idea_1/idea1/CR/DP/add/Madd_O_xor<15> (idea_1/idea1/CR/DP/addop_Out<15>)
+     LUT2:I1->O            1   0.704   0.000  idea_1/idea1/CR/DP/xor_4/Mxor_O_Result<15>1 (idea_1/idea1/sig_RY4<15>)
+     FDE:D                     0.308          idea_1/idea1/Reg4/Q_15
+    ----------------------------------------
+    Total                     26.537ns (18.255ns logic, 8.282ns route)
+                                       (68.8% logic, 31.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'idea_1/uart1/rx/rxclk'
+  Clock period: 2.863ns (frequency: 349.284MHz)
+  Total number of paths / destination ports: 24 / 12
+-------------------------------------------------------------------------
+Delay:               2.863ns (Levels of Logic = 1)
+  Source:            idea_1/uart1/rx/idle (FF)
+  Destination:       idea_1/uart1/rx/rxparity (FF)
+  Source Clock:      idea_1/uart1/rx/rxclk rising
+  Destination Clock: idea_1/uart1/rx/rxclk rising
+
+  Data Path: idea_1/uart1/rx/idle to idea_1/uart1/rx/rxparity
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDP:C->Q             19   0.591   1.260  idea_1/uart1/rx/idle (idea_1/uart1/rx/idle)
+     LUT2:I0->O            1   0.704   0.000  idea_1/uart1/rx/rxparity_mux00011 (idea_1/uart1/rx/rxparity_mux0001)
+     FDP:D                     0.308          idea_1/uart1/rx/rxparity
+    ----------------------------------------
+    Total                      2.863ns (1.603ns logic, 1.260ns route)
+                                       (56.0% logic, 44.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'idea_1/uart1/tx/txclk'
+  Clock period: 5.497ns (frequency: 181.917MHz)
+  Total number of paths / destination ports: 142 / 12
+-------------------------------------------------------------------------
+Delay:               5.497ns (Levels of Logic = 3)
+  Source:            idea_1/uart1/tx/tsr_0 (FF)
+  Destination:       idea_1/uart1/tx/tsr_7 (FF)
+  Source Clock:      idea_1/uart1/tx/txclk rising
+  Destination Clock: idea_1/uart1/tx/txclk rising
+
+  Data Path: idea_1/uart1/tx/tsr_0 to idea_1/uart1/tx/tsr_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              3   0.591   0.706  idea_1/uart1/tx/tsr_0 (idea_1/uart1/tx/tsr_0)
+     LUT4:I0->O            2   0.704   0.622  idea_1/uart1/tx/txdone_or00004 (idea_1/uart1/tx/txdone_or00004)
+     LUT4:I0->O           13   0.704   1.158  idea_1/uart1/tx/txdone_or000017 (idea_1/uart1/tx/txdone_or0000)
+     LUT4:I0->O            1   0.704   0.000  idea_1/uart1/tx/tsr_7_mux00011 (idea_1/uart1/tx/tsr_7_mux0001)
+     FDC:D                     0.308          idea_1/uart1/tx/tsr_7
+    ----------------------------------------
+    Total                      5.497ns (3.011ns logic, 2.486ns route)
+                                       (54.8% logic, 45.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_div_1/CLK_OUT1'
+  Total number of paths / destination ports: 229 / 229
+-------------------------------------------------------------------------
+Offset:              6.180ns (Levels of Logic = 3)
+  Source:            Reset (PAD)
+  Destination:       idea_1/key_87 (FF)
+  Destination Clock: clk_div_1/CLK_OUT1 rising
+
+  Data Path: Reset to idea_1/key_87
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            74   1.218   1.310  Reset_IBUF (Reset_IBUF)
+     LUT4:I2->O            8   0.704   0.932  idea_1/key_64_not000111 (idea_1/N43)
+     LUT4:I0->O            8   0.704   0.757  idea_1/key_80_not00011 (idea_1/key_80_not0001)
+     FDE:CE                    0.555          idea_1/key_80
+    ----------------------------------------
+    Total                      6.180ns (3.181ns logic, 2.999ns route)
+                                       (51.5% logic, 48.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'idea_1/uart1/rx/rxclk'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              2.992ns (Levels of Logic = 2)
+  Source:            RxD (PAD)
+  Destination:       idea_1/uart1/rx/rxstop (FF)
+  Destination Clock: idea_1/uart1/rx/rxclk rising
+
+  Data Path: RxD to idea_1/uart1/rx/rxstop
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   1.218   0.762  RxD_IBUF (RxD_IBUF)
+     LUT2:I0->O            1   0.704   0.000  idea_1/uart1/rx/rxstop_mux00011 (idea_1/uart1/rx/rxstop_mux0001)
+     FDC:D                     0.308          idea_1/uart1/rx/rxstop
+    ----------------------------------------
+    Total                      2.992ns (2.230ns logic, 0.762ns route)
+                                       (74.5% logic, 25.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'idea_1/uart1/tx/txclk'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.283ns (Levels of Logic = 1)
+  Source:            idea_1/uart1/tx/sout (FF)
+  Destination:       TxD (PAD)
+  Source Clock:      idea_1/uart1/tx/txclk rising
+
+  Data Path: idea_1/uart1/tx/sout to TxD
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDP:C->Q              1   0.591   0.420  idea_1/uart1/tx/sout (idea_1/uart1/tx/sout)
+     OBUF:I->O                 3.272          TxD_OBUF (TxD)
+    ----------------------------------------
+    Total                      4.283ns (3.863ns logic, 0.420ns route)
+                                       (90.2% logic, 9.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_div_1/CLK_OUT1'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              4.310ns (Levels of Logic = 1)
+  Source:            idea_1/LEDs_3 (FF)
+  Destination:       LEDs<3> (PAD)
+  Source Clock:      clk_div_1/CLK_OUT1 rising
+
+  Data Path: idea_1/LEDs_3 to LEDs<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRS:C->Q             2   0.591   0.447  idea_1/LEDs_3 (idea_1/LEDs_3)
+     OBUF:I->O                 3.272          LEDs_3_OBUF (LEDs<3>)
+    ----------------------------------------
+    Total                      4.310ns (3.863ns logic, 0.447ns route)
+                                       (89.6% logic, 10.4% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 15.00 secs
+Total CPU time to Xst completion: 15.20 secs
+ 
+--> 
+
+Total memory usage is 4600844 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    5 (   0 filtered)
+Number of infos    :    8 (   0 filtered)
+

@@ -1,0 +1,7 @@
+vhdl work "xorop.vhd"
+vhdl work "mulop.vhd"
+vhdl work "addop.vhd"
+vhdl work "trafo.vhd"
+vhdl work "round.vhd"
+vhdl work "idea.vhd"
+vhdl work "tb_idea.vhd"

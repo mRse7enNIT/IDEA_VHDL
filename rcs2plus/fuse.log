@@ -1,0 +1,43 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -o "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/rcs2plus/tb_idea_rcs2plus_isim_beh.exe" -prj "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/rcs2plus/tb_idea_rcs2plus_beh.prj" "work.tb_idea_rcs2plus" 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/rcs2plus/xorop.vhd" into library work
+Parsing VHDL file "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/rcs2plus/register_16.vhd" into library work
+Parsing VHDL file "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/rcs2plus/mux4x1.vhd" into library work
+Parsing VHDL file "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/rcs2plus/mulop.vhd" into library work
+Parsing VHDL file "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/rcs2plus/addop.vhd" into library work
+Parsing VHDL file "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/rcs2plus/datapath.vhd" into library work
+Parsing VHDL file "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/rcs2plus/control.vhd" into library work
+Parsing VHDL file "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/rcs2plus/roundcounter.vhd" into library work
+Parsing VHDL file "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/rcs2plus/mux2x1.vhd" into library work
+Parsing VHDL file "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/rcs2plus/keygen.vhd" into library work
+Parsing VHDL file "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/rcs2plus/clockedround.vhd" into library work
+Parsing VHDL file "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/rcs2plus/idea_rcs2plus.vhd" into library work
+Parsing VHDL file "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/rcs2plus/tb_idea_rcs2plus.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling architecture behavioral of entity mux2x1 [mux2x1_default]
+Compiling architecture behavioral of entity register_16 [register_16_default]
+Compiling architecture behavioral of entity keygen [keygen_default]
+Compiling architecture behavioral of entity mux4x1 [mux4x1_default]
+Compiling architecture behavioral of entity mulop [mulop_default]
+Compiling architecture behavioral of entity addop [addop_default]
+Compiling architecture behavioral of entity xorop [xorop_default]
+Compiling architecture behavioral of entity datapath [datapath_default]
+Compiling architecture behavioral of entity control [control_default]
+Compiling architecture structural of entity clockedround [clockedround_default]
+Compiling architecture behavioral of entity roundcounter [roundcounter_default]
+Compiling architecture structural of entity idea_rcs2plus [idea_rcs2plus_default]
+Compiling architecture behavior of entity tb_idea_rcs2plus
+Time Resolution for simulation is 1ps.
+Waiting for 9 sub-compilation(s) to finish...
+Compiled 29 VHDL Units
+Built simulation executable D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/rcs2plus/tb_idea_rcs2plus_isim_beh.exe
+Fuse Memory Usage: 34688 KB
+Fuse CPU Usage: 608 ms

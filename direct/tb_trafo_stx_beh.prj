@@ -1,0 +1,4 @@
+vhdl isim_temp "mulop.vhd"
+vhdl isim_temp "addop.vhd"
+vhdl isim_temp "trafo.vhd"
+vhdl isim_temp "tb_trafo.vhd"

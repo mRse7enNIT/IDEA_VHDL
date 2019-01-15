@@ -1,0 +1,43 @@
+V3 23
+FL "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/direct/addop.vhd" 2018/11/19.21:38:54 P.20131013
+EN work/addop 1546733475 \
+      FL "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/direct/addop.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/addop/Behavioral 1546733476 \
+      FL "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/direct/addop.vhd" \
+      EN work/addop 1546733475
+FL "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/direct/idea.vhd" 2018/11/22.01:44:28 P.20131013
+EN work/idea 1546733483 \
+      FL "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/direct/idea.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/idea/Structural 1546733484 \
+      FL "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/direct/idea.vhd" \
+      EN work/idea 1546733483 CP round CP trafo
+FL "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/direct/mulop.vhd" 2018/11/20.13:55:18 P.20131013
+EN work/mulop 1546733473 \
+      FL "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/direct/mulop.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/mulop/Behavioral 1546733474 \
+      FL "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/direct/mulop.vhd" \
+      EN work/mulop 1546733473
+FL "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/direct/round.vhd" 2018/11/20.16:09:20 P.20131013
+EN work/round 1546733479 \
+      FL "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/direct/round.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/round/Behavioral 1546733480 \
+      FL "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/direct/round.vhd" \
+      EN work/round 1546733479 CP mulop CP addop CP xorop
+FL "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/direct/trafo.vhd" 2018/11/20.22:38:35 P.20131013
+EN work/trafo 1546733481 \
+      FL "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/direct/trafo.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/trafo/Behavioral 1546733482 \
+      FL "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/direct/trafo.vhd" \
+      EN work/trafo 1546733481 CP mulop CP addop
+FL "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/direct/xorop.vhd" 2018/11/13.15:25:49 P.20131013
+EN work/xorop 1546733477 \
+      FL "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/direct/xorop.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/xorop/Behavioral 1546733478 \
+      FL "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/direct/xorop.vhd" \
+      EN work/xorop 1546733477

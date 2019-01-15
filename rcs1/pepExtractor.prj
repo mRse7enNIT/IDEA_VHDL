@@ -1,0 +1,6 @@
+work	"control.vhd"
+work	"idea_single.vhd"
+work	"keygen.vhd"
+work	"mux2x1.vhd"
+work	"round.vhd"
+work	"trafo.vhd"

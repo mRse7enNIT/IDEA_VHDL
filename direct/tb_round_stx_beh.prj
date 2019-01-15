@@ -1,0 +1,5 @@
+vhdl isim_temp "xorop.vhd"
+vhdl isim_temp "mulop.vhd"
+vhdl isim_temp "addop.vhd"
+vhdl isim_temp "round.vhd"
+vhdl isim_temp "tb_round.vhd"

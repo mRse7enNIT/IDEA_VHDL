@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="info" file="MapLib" num="562" delta="new" >No environment variables are currently set.
+</msg>
+
+<msg type="info" file="LIT" num="244" delta="new" >All of the single ended outputs in this design are using slew rate limited output drivers. The delay on speed critical single ended outputs can be dramatically reduced by designating them as fast outputs.
+</msg>
+
+<msg type="error" file="Pack" num="2310" delta="new" >Too many comps of type &quot;<arg fmt="%s" index="1">SLICEL</arg>&quot; found to fit this device.
+</msg>
+
+<msg type="error" file="Pack" num="18" delta="new" >The design is too large for the given device and package.  Please check the Design Summary section to see which resource requirement for your design exceeds the resources available in the device.
+
+NOTE: An NCD file will still be generated to allow you to examine the mapped design.  This file is intended for evaluation use only, and will not process successfully through PAR.
+
+This mapped NCD file can be used to evaluate how the design&apos;s logic has been mapped into FPGA logic resources.  It can also be used to analyze preliminary, logic-level (pre-route) timing with one of the Xilinx static timing analysis tools (TRCE or Timing Analyzer).
+</msg>
+
+</messages>
+

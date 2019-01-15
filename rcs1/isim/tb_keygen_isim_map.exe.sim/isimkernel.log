@@ -1,0 +1,31 @@
+Command line:
+   tb_keygen_isim_map.exe
+     -simmode  gui
+     -sdfmax  /uut/=.sdf
+     -sdfroot  /uut
+     -simrunnum  2
+     -socket  61987
+
+Sun Jan 06 03:39:05 2019
+
+
+ Elaboration Time: 0.0625 sec
+
+ Current Memory Usage: 5330.87 Meg
+
+ Total Signals          : 8
+ Total Nets             : 228
+ Total Signal Drivers   : 2
+ Total Blocks           : 2
+ Total Primitive Blocks : 2
+ Total Processes        : 1
+ Total Traceable Variables  : 8
+ Total Scalar Nets and Variables : 588
+Total Line Count : 19
+
+ Total Simulation Time: 0.125 sec
+
+ Current Memory Usage: 5330.87 Meg
+
+Sun Jan 06 03:39:09 2019
+

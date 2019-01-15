@@ -1,0 +1,2 @@
+vhdl isim_temp "addop.vhd"
+vhdl isim_temp "tb_addop.vhd"

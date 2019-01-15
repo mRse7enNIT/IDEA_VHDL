@@ -1,0 +1,197 @@
+Release 14.7 par P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+DESKTOP-UAFL1EL::  Mon Jan 14 02:22:19 2019
+
+par -w -intstyle ise -ol high -t 1 idea_com_map.ncd idea_com.ncd idea_com.pcf 
+
+
+Constraints file: idea_com.pcf.
+Loading device for application Rf_Device from file '3s500e.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
+   "idea_com" is an NCD, version 3.2, device xc3s500e, package fg320, speed -4
+
+Initializing temperature to 85.000 Celsius. (default - Range: -40.000 to 100.000 Celsius)
+Initializing voltage to 1.140 Volts. (default - Range: 1.140 to 1.320 Volts)
+
+
+Device speed data version:  "PRODUCTION 1.27 2013-10-13".
+
+
+Design Summary Report:
+
+ Number of External IOBs                          12 out of 232     5%
+
+   Number of External Input IOBs                  3
+
+      Number of External Input IBUFs              3
+        Number of LOCed External Input IBUFs      3 out of 3     100%
+
+
+   Number of External Output IOBs                 9
+
+      Number of External Output IOBs              9
+        Number of LOCed External Output IOBs      9 out of 9     100%
+
+
+   Number of External Bidir IOBs                  0
+
+
+   Number of BUFGMUXs                        2 out of 24      8%
+   Number of MULT18X18SIOs                   1 out of 20      5%
+   Number of Slices                        846 out of 4656   18%
+      Number of SLICEMs                      0 out of 2328    0%
+
+
+
+Overall effort level (-ol):   High 
+Placer effort level (-pl):    High 
+Placer cost table entry (-t): 1
+Router effort level (-rl):    High 
+
+Starting initial Timing Analysis.  REAL time: 3 secs 
+Finished initial Timing Analysis.  REAL time: 3 secs 
+
+
+Starting Placer
+Total REAL time at the beginning of Placer: 3 secs 
+Total CPU  time at the beginning of Placer: 1 secs 
+
+Phase 1.1  Initial Placement Analysis
+Phase 1.1  Initial Placement Analysis (Checksum:be79af68) REAL time: 8 secs 
+
+Phase 2.7  Design Feasibility Check
+Phase 2.7  Design Feasibility Check (Checksum:be79af68) REAL time: 8 secs 
+
+Phase 3.31  Local Placement Optimization
+Phase 3.31  Local Placement Optimization (Checksum:be79af68) REAL time: 8 secs 
+
+Phase 4.2  Initial Clock and IO Placement
+
+Phase 4.2  Initial Clock and IO Placement (Checksum:7ff36d40) REAL time: 10 secs 
+
+Phase 5.30  Global Clock Region Assignment
+Phase 5.30  Global Clock Region Assignment (Checksum:7ff36d40) REAL time: 10 secs 
+
+Phase 6.36  Local Placement Optimization
+Phase 6.36  Local Placement Optimization (Checksum:7ff36d40) REAL time: 10 secs 
+
+Phase 7.8  Global Placement
+.....................
+............
+Phase 7.8  Global Placement (Checksum:cd4f6e10) REAL time: 10 secs 
+
+Phase 8.5  Local Placement Optimization
+Phase 8.5  Local Placement Optimization (Checksum:cd4f6e10) REAL time: 10 secs 
+
+Phase 9.18  Placement Optimization
+Phase 9.18  Placement Optimization (Checksum:e975014a) REAL time: 10 secs 
+
+Phase 10.5  Local Placement Optimization
+Phase 10.5  Local Placement Optimization (Checksum:e975014a) REAL time: 10 secs 
+
+Total REAL time to Placer completion: 10 secs 
+Total CPU  time to Placer completion: 4 secs 
+Writing design to file idea_com.ncd
+
+
+
+Starting Router
+
+
+Phase  1  : 5582 unrouted;      REAL time: 15 secs 
+
+Phase  2  : 5275 unrouted;      REAL time: 16 secs 
+
+Phase  3  : 1753 unrouted;      REAL time: 16 secs 
+
+Phase  4  : 1753 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 17 secs 
+
+Phase  5  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 18 secs 
+
+Updating file: idea_com.ncd with current fully routed design.
+
+Phase  6  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 19 secs 
+
+Phase  7  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 19 secs 
+
+Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 19 secs 
+WARNING:Route:455 - CLK Net:idea_1/uart1/tx/txclk may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+
+Total REAL time to Router completion: 19 secs 
+Total CPU time to Router completion: 12 secs 
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Generating "PAR" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+|   clk_div_1/CLK_OUT | BUFGMUX_X1Y10| No   |  260 |  0.065     |  0.183      |
++---------------------+--------------+------+------+------------+-------------+
+|           Clk_BUFGP | BUFGMUX_X1Y11| No   |   17 |  0.013     |  0.161      |
++---------------------+--------------+------+------+------------+-------------+
+|idea_1/uart1/rx/rxcl |              |      |      |            |             |
+|                   k |         Local|      |    7 |  0.077     |  2.002      |
++---------------------+--------------+------+------+------------+-------------+
+|idea_1/uart1/tx/txcl |              |      |      |            |             |
+|                   k |         Local|      |    8 |  0.040     |  2.020      |
++---------------------+--------------+------+------+------------+-------------+
+
+* Net Skew is the difference between the minimum and maximum routing
+only delays for the net. Note this is different from Clock Skew which
+is reported in TRCE timing report. Clock Skew is the difference between
+the minimum and maximum path delays which includes logic delays.
+
+* The fanout is the number of component pins not the individual BEL loads,
+for example SLICE loads not FF loads.
+
+Timing Score: 0 (Setup: 0, Hold: 0, Component Switching Limit: 0)
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+----------------------------------------------------------------------------------------------------------
+  Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
+                                            |             |    Slack   | Achievable | Errors |    Score   
+----------------------------------------------------------------------------------------------------------
+  NET "Clk_BUFGP/IBUFG" PERIOD = 20 ns HIGH | SETUP       |    13.001ns|     6.999ns|       0|           0
+   40%                                      | HOLD        |     1.607ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+Total REAL time to PAR completion: 20 secs 
+Total CPU time to PAR completion: 12 secs 
+
+Peak Memory Usage:  4453 MB
+
+Placement: Completed - No errors found.
+Routing: Completed - No errors found.
+Timing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 1
+Number of info messages: 0
+
+Writing design to file idea_com.ncd
+
+
+
+PAR done!

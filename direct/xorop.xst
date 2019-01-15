@@ -1,0 +1,5 @@
+set -tmpdir "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/direct/xst/projnav.tmp"
+set -xsthdpdir "D:/Masters_Study/1st Sem/VHDL lab/Workspace/submit/direct/xst"
+elaborate
+-ifn xorop.prj
+-ifmt mixed
